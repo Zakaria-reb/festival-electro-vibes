@@ -1,0 +1,35 @@
+:root{
+  --nuit:#14213D; --corail:#E63E6D; --mer:#2EC4B6; --sable:#F6E8C8; --blanc:#FFFFFF;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Segoe UI",Helvetica,Arial,sans-serif;background:var(--nuit);color:var(--sable);line-height:1.6}
+a{color:inherit}
+.top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;padding:1rem 5vw;position:sticky;top:0;background:var(--nuit);border-bottom:2px solid var(--mer)}
+.logo{font-weight:800;font-size:1.2rem;text-decoration:none;color:var(--corail)}
+nav a{margin-left:1.2rem;text-decoration:none}
+nav a:hover,nav a:focus-visible{color:var(--mer)}
+section{padding:4rem 5vw;max-width:900px;margin:auto}
+h1{font-size:clamp(2.4rem,8vw,5rem);line-height:1.05;margin:0 0 1rem;color:var(--blanc)}
+h2{font-size:2rem;color:var(--mer);margin-top:0}
+.hero{text-align:center;max-width:none;padding:6rem 5vw;background:linear-gradient(180deg,var(--nuit) 0%,#2a2250 70%,var(--corail) 160%)}
+.sub{font-size:1.2rem}
+.countdown{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin:2rem 0}
+.countdown div{min-width:90px;padding:.8rem;border:2px solid var(--mer);border-radius:8px}
+.countdown span{display:block;font-size:2.2rem;font-weight:800;color:var(--blanc)}
+.btn{display:inline-block;background:var(--corail);color:var(--blanc);border:0;padding:.8rem 1.6rem;border-radius:6px;font-size:1rem;font-weight:700;text-decoration:none;cursor:pointer}
+.btn:hover,.btn:focus-visible{background:var(--mer);color:var(--nuit)}
+.days{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.days article{border-left:4px solid var(--corail);padding:.2rem 1rem}
+h3{margin:0 0 .3rem;color:var(--blanc)}
+.note{font-size:.85rem;opacity:.7}
+ul{padding-left:1.2rem}
+form{display:grid;gap:.5rem;max-width:480px}
+input,select{padding:.7rem;border-radius:6px;border:2px solid transparent;font-size:1rem}
+input.err,select.err{border-color:var(--corail)}
+form .btn{margin-top:1rem}
+#msg{min-height:1.5rem;font-weight:600}
+#msg.ok{color:var(--mer)} #msg.ko{color:var(--corail)}
+footer{text-align:center;padding:2rem;font-size:.85rem;border-top:1px solid var(--mer)}
+:focus-visible{outline:3px solid var(--sable);outline-offset:2px}
+@media (max-width:600px){nav a{margin:0 .8rem 0 0}}
