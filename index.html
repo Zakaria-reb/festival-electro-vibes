@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mazagan Beats Festival 2027</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="#accueil">Mazagan Beats</a>
+  <nav>
+    <a href="#programme">Programme</a>
+    <a href="#infos">Infos pratiques</a>
+    <a href="#inscription">S’inscrire</a>
+  </nav>
+</header>
+
+<main>
+  <section id="accueil" class="hero">
+    <h1>Mazagan Beats Festival</h1>
+    <p class="sub">Trois jours de musique face à l’océan, à El Jadida.<br>17, 18 et 19 juillet 2027</p>
+    <div id="countdown" class="countdown" aria-live="polite">
+      <div><span id="d">--</span>jours</div>
+      <div><span id="h">--</span>heures</div>
+      <div><span id="m">--</span>minutes</div>
+      <div><span id="s">--</span>secondes</div>
+    </div>
+    <a class="btn" href="#inscription">Réserver ma place</a>
+  </section>
+
+  <section id="programme">
+    <h2>Programme</h2>
+    <div class="days">
+      <article>
+        <h3>Samedi 17 juillet</h3>
+        <p>Scène Océan : Gnawa Fusion Collective, Nour Electro</p>
+      </article>
+      <article>
+        <h3>Dimanche 18 juillet</h3>
+        <p>Scène Océan : Atlas Groove Band, DJ Mazigh<br>Scène Remparts : Hip-hop Session</p>
+      </article>
+      <article>
+        <h3>Lundi 19 juillet</h3>
+        <p>Scène Océan : Sahara Beats, grande soirée de clôture</p>
+      </article>
+    </div>
+    <p class="note">Les artistes cités sont fictifs, créés pour ce projet.</p>
+  </section>
+
+  <section id="infos">
+    <h2>Infos pratiques</h2>
+    <ul>
+      <li><strong>Lieu :</strong> Plage de Haouzia, El Jadida</li>
+      <li><strong>Horaires :</strong> ouverture des portes à 17h, concerts de 18h à 1h</li>
+      <li><strong>Tarifs :</strong> 150 DH par jour, 350 DH le pass 3 jours</li>
+      <li><strong>Accès :</strong> navettes gratuites depuis la gare d’El Jadida</li>
+    </ul>
+  </section>
+
+  <section id="inscription">
+    <h2>Inscription</h2>
+    <form id="form" novalidate>
+      <label for="nom">Nom complet</label>
+      <input id="nom" type="text" autocomplete="name">
+      <label for="email">Adresse e-mail</label>
+      <input id="email" type="email" autocomplete="email">
+      <label for="pass">Pass</label>
+      <select id="pass">
+        <option value="">Choisir un pass</option>
+        <option>Un jour, 150 DH</option>
+        <option>Trois jours, 350 DH</option>
+      </select>
+      <button class="btn" type="submit">Envoyer mon inscription</button>
+      <p id="msg" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer>© 2027 Mazagan Beats Festival. Projet pédagogique, ENSA El Jadida. Réalisé par Zakaria Rebbah et Amina Saoud.</footer>
+<script src="script.js"></script>
+</body>
+</html>
